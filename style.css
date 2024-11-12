@@ -6,19 +6,56 @@
 html{
     user-select: none;
     background: url("bg3_4.jpg");
+    background-position: 150px 0;
 }
+/*LOCAL FONTS USED*/
 
 @font-face {
     font-family: "titleFont";
     src: url("halo_dek (1)/Halo Dek.otf");
 }
-
-#header{
-    font-family: "titleFont";
-}   
-#title{
-    font-size: 120px;
-    text-align: center;
+@font-face {
+    font-family: "aboutUs";
+    src: url("Cloudy June.ttf");
+}
+@font-face {
+    font-family: "aboutUsTitle";
+    src: url("KBCloudyDay.ttf");
+}
+#aboutUs_Title{
+    width: 400px;
+}
+#about_us{
     color: white;
-    text-shadow: 2px 2px 20px #000000;
+    font-size: 35px;
+    font-family: "aboutUsTitle";
+    
+    width: 55%;
+    text-align: center;
+
+    position: relative;
+    left: 50%;
+    top: -40px;
+    transform: translateX(-50%);
+    z-index: 6;
+}
+#about_us_content{
+    width: 1000px;
+}
+#title{
+    width: 900px;
+
+    position: relative;
+    left: 50%;
+    top: -50px;
+    transform: translateX(-50%);
+}
+
+
+
+/*STYLE FOR MOBILE VERSION*/
+@media screen and (max-width:850px) {
+    #about_us{
+        width: 900px;
+    }
 }
